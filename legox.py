@@ -25,7 +25,7 @@ try:
 except:
     db={"users":{},"admins":[]}
 
-users = db.get("users", [])
+users = db.get("users", {})
 admins=db["admins"]
 
 def save():
