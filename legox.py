@@ -26,7 +26,7 @@ except:
     db={"users":{},"admins":[]}
 
 users = db.get("users", {})
-admins=db["admins"]
+admins = db.get("admins", [])
 
 def save():
     with open("users.json","w") as f:
