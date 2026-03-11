@@ -5,7 +5,7 @@ import time
 from datetime import datetime,timedelta
 from telebot.types import InlineKeyboardMarkup,InlineKeyboardButton
 
-TOKEN="8690768879:AAEjVVhnAHLW3x_GUY_x-kkpCztdKO0E1r8"
+TOKEN="8690768879:AAGLxs7WMK782qzJsns7382H0aRzY38ArrQ"
 
 NUM_API="https://cyber-osint-num-infos.vercel.app/api/numinfo"
 COSMO_API="http://api.subhxcosmo.in/api"
