@@ -1,6 +1,23 @@
 import telebot
 import requests
 import json
+
+from flask import Flask
+import threading
+import os
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Bot is alive"
+
+def run_web():
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
+
+threading.Thread(target=run_web).start()
+
 import time
 from datetime import datetime,timedelta
 from telebot.types import InlineKeyboardMarkup,InlineKeyboardButton
